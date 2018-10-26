@@ -134,7 +134,6 @@
         return this._position;
       }
       set position(val) {
-        console.log(val);
         const newValue = Math.floor(val / (this.rect.width || 1) * 100) || 0;
         const cancelled = !this.dispatchEvent(new Event('change', { bubbles: true }))
         if (cancelled) {
