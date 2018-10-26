@@ -2,11 +2,7 @@ const todoApi = axios.create({
     baseURL: "https://bcw-sandbox.herokuapp.com/api/Noah/todos/",
     timeout: 3000
   });
-  
-  function logError(error) {
-    console.error(error);
-  }
-  
+
   let todoList = [];
   
   export default class TodoService {
