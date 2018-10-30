@@ -65,7 +65,7 @@
 				<form onsubmit='app.controllers.todos.addTodo(event.target.todo); event.preventDefault()'>
 					<input autocomplete="off" oninput='app.addTodo.disabled = event.target.value === ""' placeholder='Add Todo' type='text' id='todo-input'
 					 class='todo-input' name='todo' />
-					<button disabled type='submit' class='add-todo' id='add-todo'>+</button>
+					<button type='submit' class='add-todo' id='add-todo'>+</button>
 				</form>
 			</aside>
 		</footer>

@@ -21,7 +21,8 @@ function draw(todos) {
 				<input
 					type='checkbox'
 					id='todo-${todo._id}'
-					${todo.completed ? 'checked' : ''}
+          ${todo.completed ? 'checked' : ''}
+          onclick='app.controllers.todos.addTodo("${todo._id}")
 					onchange='app.controllers.todos.toggleTodoStatus("${todo._id}")'
 				/>
 				<label for='todo-${todo._id}'>${todo.description}</label>
